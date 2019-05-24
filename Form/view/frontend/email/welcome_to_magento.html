@@ -1,0 +1,24 @@
+<!--@subject {{trans "Welcome"}}  @-->
+{{template config_path="design/email/header_template"}}
+
+<h2>Guest {{var name}}</h2>
+<table>
+    <tr>
+        <td>Name:</td>
+        <td>{{var name}}</td>
+    </tr>
+    <tr>
+        <td>Email:</td>
+        <td>{{var email}}</td>
+    </tr>
+    <tr>
+        <td>Phone Number:</td>
+        <td>{{var phone}}</td>
+    </tr>
+    <tr>
+        <td>Message:</td>
+        <td>{{var message}}</td>
+    </tr>
+</table>
+
+{{template config_path="design/email/footer_template"}}

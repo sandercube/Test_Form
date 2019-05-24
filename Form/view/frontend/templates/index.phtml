@@ -1,0 +1,42 @@
+<h2 style="text-align: center">Contact Us</h2>
+<form action="<?php echo $block->getBaseUrl() . 'testform/index/post/'; ?>" name="customemaildata" method="post"
+      id="contactForm-1" data-hasrequired="<?php echo __('* Required Fields') ?>" data-mage-init='{"validation":{}}'>
+    <fieldset class="fieldset">
+        <div class="field email required">
+            <label class="label" for="name"><span><?php echo __('Name') ?></span></label>
+            <div class="control">
+                <input name="name" id="name" title="<?php echo __('Name') ?>" class="input-text" type="text"
+                       data-validate="{required:true}"/>
+            </div>
+        </div>
+        <div class="field email required">
+            <label class="label" for="email"><span><?php echo __('Email') ?></span></label>
+            <div class="control">
+                <input name="email" id="email" title="<?php echo __('Email') ?>" class="input-text" type="email"
+                       data-validate="{required:true, 'validate-email':true}"/>
+            </div>
+        </div>
+        <div class="field email required">
+            <label class="label" for="phone"><span><?php echo __('Phone Number') ?></span></label>
+            <div class="control">
+                <input name="phone" id="phone" title="<?php echo __('Phone Number') ?>" class="input-text" type="text"
+                       data-validate="{required:true}"/>
+            </div>
+        </div>
+        <div class="field email required">
+            <label class="label" for="message"><span><?php echo __('Message') ?></span></label>
+            <div class="control">
+                <textarea name="message" id="message" title="<?php echo __('Message') ?>" class="input-text" type="text"
+                          data-validate="{required:true}"></textarea>
+            </div>
+        </div>
+    </fieldset>
+    <div class="actions-toolbar">
+        <div class="primary">
+            <input type="hidden" name="hideit" id="hideit" value=""/>
+            <button type="submit" title="<?php echo __('Submit') ?>" class="action submit primary">
+                <span><?php echo __('Submit') ?></span>
+            </button>
+        </div>
+    </div>
+</form>
